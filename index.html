@@ -138,7 +138,7 @@ FORM: Category standard (owner's pick).
   .ba .knob svg{width:24px;height:24px}
   .ba input{position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; z-index:4; margin:0}
   .gallery{display:flex; flex-direction:column; gap:14px}
-  .thumbs{display:grid; grid-template-columns:repeat(6,1fr); gap:10px}
+  .thumbs{display:grid; grid-template-columns:repeat(5,1fr); gap:10px}
   .thumb{padding:0; border:2px solid transparent; border-radius:12px; overflow:hidden; cursor:pointer; background:none; aspect-ratio:3/2; opacity:.7; transition:opacity .2s, border-color .2s, transform .2s}
   .thumb img{width:100%; height:100%; object-fit:cover}
   .thumb:hover{opacity:1; transform:translateY(-2px)}
@@ -176,21 +176,16 @@ FORM: Category standard (owner's pick).
 
   /* care & comfort */
   .care{background:var(--sand)}
-  .care-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:stretch}
-  .care-main{position:relative; border-radius:24px; overflow:hidden; min-height:460px; display:flex; align-items:flex-end; color:#fff}
-  .care-main img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
-  .care-main::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(21,48,46,.05) 0%, rgba(21,48,46,.55) 45%, rgba(21,48,46,.94) 100%); z-index:1}
-  .care-main .body{position:relative; z-index:2; padding:clamp(26px,3.5vw,44px)}
-  .care-main h2{color:#fff}
-  .care-main p{color:#E1EEEA; margin-top:1rem; max-width:46ch}
-  .care-main .link{color:#fff; margin-top:1.5rem}
-  .comfort{background:var(--ink); color:#fff; border-radius:24px; padding:clamp(28px,3.5vw,44px); display:flex; flex-direction:column; gap:1.1rem}
-  .comfort .ico{width:56px;height:56px;border-radius:16px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:var(--honey)}
-  .comfort .ico svg{width:28px;height:28px}
-  .comfort h2{color:#fff; font-size:clamp(1.7rem,2.8vw,2.2rem)}
-  .comfort p{color:#C9DDD8}
-  .comfort .btn{margin-top:auto; align-self:flex-start; background:#fff; color:var(--ink)}
-  .comfort .btn:hover{background:var(--mint)}
+  .care-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(32px,5vw,72px); align-items:center}
+  .care-photo{margin:0; border-radius:24px; overflow:hidden; box-shadow:var(--shadow); aspect-ratio:4/5; max-height:640px; width:100%}
+  .care-photo img{width:100%; height:100%; object-fit:cover; object-position:30% 55%}
+  .care-text p{color:var(--muted); margin-top:1rem; max-width:46ch; font-size:1.1rem}
+  .care-text .link{margin-top:1.4rem}
+  .comfort{display:flex; gap:1rem; align-items:flex-start; margin-top:2.2rem; padding-top:2rem; border-top:1px solid #DCD4C8}
+  .comfort .ico{width:48px;height:48px;border-radius:14px;background:var(--mint);display:grid;place-items:center;color:var(--pine);flex:none}
+  .comfort .ico svg{width:24px;height:24px}
+  .comfort h3{font-size:1.35rem}
+  .comfort p{font-size:1rem; margin-top:.5rem}
 
   /* next step / booking */
   .book-card{background:var(--ink); color:#fff; border-radius:28px; overflow:hidden; box-shadow:var(--shadow); text-align:center}
@@ -208,7 +203,7 @@ FORM: Category standard (owner's pick).
   footer{background:var(--sand); padding-block:56px 40px; font-size:.95rem; border-top:1px solid #E4DCD0}
   #services{padding-top:clamp(24px,3vw,40px)}
   #contact{background:var(--sand); padding-top:0}
-  .care{padding-bottom:24px}
+  .care{padding-bottom:clamp(48px,6vw,80px)}
   .foot{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:2rem}
   .foot h4{font-size:.95rem; margin:0 0 .9rem}
   .foot ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:.5rem}
@@ -392,7 +387,7 @@ FORM: Category standard (owner's pick).
             <div class="handle" aria-hidden="true"><span class="knob"><svg viewBox="0 0 24 24"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
             <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
           </div>
-          <div class="thumbs" role="group" aria-label="Choose a smile"><button type="button" class="thumb on" data-case="1" aria-label="Show smile 1" aria-pressed="true"><img src="images/smiles/smile-1-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="2" aria-label="Show smile 2" aria-pressed="false"><img src="images/smiles/smile-2-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="3" aria-label="Show smile 3" aria-pressed="false"><img src="images/smiles/smile-3-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="4" aria-label="Show smile 4" aria-pressed="false"><img src="images/smiles/smile-4-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="5" aria-label="Show smile 5" aria-pressed="false"><img src="images/smiles/smile-5-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="6" aria-label="Show smile 6" aria-pressed="false"><img src="images/smiles/smile-6-after.jpg" alt="" loading="lazy"></button></div>
+          <div class="thumbs" role="group" aria-label="Choose a smile"><button type="button" class="thumb on" data-case="1" aria-label="Show smile 1" aria-pressed="true"><img src="images/smiles/smile-1-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="2" aria-label="Show smile 2" aria-pressed="false"><img src="images/smiles/smile-2-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="3" aria-label="Show smile 3" aria-pressed="false"><img src="images/smiles/smile-3-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="4" aria-label="Show smile 4" aria-pressed="false"><img src="images/smiles/smile-4-after.jpg" alt="" loading="lazy"></button><button type="button" class="thumb" data-case="5" aria-label="Show smile 5" aria-pressed="false"><img src="images/smiles/smile-5-after.jpg" alt="" loading="lazy"></button></div>
           <p class="ba-note">Drag the slider to compare, or pick another smile above.</p>
         </div>
       </div>
@@ -417,19 +412,20 @@ FORM: Category standard (owner's pick).
   <section class="care" id="care" aria-label="Care and comfort">
     <div class="wrap">
       <div class="care-grid">
-        <div class="care-main">
-          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80&auto=format&fit=crop" alt="A bright, calm treatment room" loading="lazy">
-          <div class="body">
-            <h2>Here for your everyday dental care.</h2>
-            <p>From checkups and cleanings to treatment for damaged teeth, explore care for your whole smile.</p>
-            <a class="link" href="#contact">General Dentistry <svg><use href="#i-arrow"/></svg></a>
+        <figure class="care-photo">
+          <img src="images/facility-reception-desk.jpg" alt="The reception desk and lobby at Silicon Valley Smile Solutions" width="1000" height="1500" loading="lazy">
+        </figure>
+        <div class="care-text">
+          <h2>Here for your everyday dental care.</h2>
+          <p>From checkups and cleanings to treatment for damaged teeth, explore care for your whole smile.</p>
+          <a class="link" href="#contact">General Dentistry <svg><use href="#i-arrow"/></svg></a>
+          <div class="comfort" id="comfort">
+            <span class="ico"><svg><use href="#i-chat"/></svg></span>
+            <div>
+              <h3>A little nervous?</h3>
+              <p>Let us know what concerns you. Ask about comfort options, including whether sedation may be appropriate.</p>
+            </div>
           </div>
-        </div>
-        <div class="comfort" id="comfort">
-          <span class="ico"><svg><use href="#i-chat"/></svg></span>
-          <h2>A little nervous? Let’s talk.</h2>
-          <p>Let us know what concerns you. Ask about comfort options, including whether sedation may be appropriate.</p>
-          <a class="btn" href="tel:+14083775134"><svg><use href="#i-phone"/></svg>Call (408) 377-5134</a>
         </div>
       </div>
     </div>
