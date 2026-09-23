@@ -1,1 +1,9 @@
 .DS_Store
+
+# Original source photos (the site uses the optimized copies in images/).
+# Patient originals carry names in their filenames; keep them out of the repo.
+/*.jpg
+/*.jpeg
+/hero.png
+/headshot.png
+/cropped-silicon-valley-smile-solutions-logo-1.png

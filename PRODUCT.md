@@ -18,8 +18,13 @@ Book a consultation (online or by phone).
 ## Tone
 Warm and neighborly, confident without hype. Plain language over clinical jargon. First-person plural ("we").
 
-## Facts status (assumptions, replace before launch)
-All of the following are placeholders and must be confirmed by the owner: dentist names, credentials and years in practice, street address, phone number, hours, review ratings/counts, patient testimonials, before/after photos, accepted insurance, financing partners, complimentary-consult offer.
+## Confirmed facts (owner-supplied homepage copy, 2026-09-22)
+- Dentist: Dr. Amir HagShenas ("Dr. Amir"). Phone: (408) 377-5134. Location: San Jose.
+- Services: dental implants (incl. full arch, placed and restored in-house), cosmetic dentistry, porcelain veneers, whitening, clear aligners, general dentistry, sedation dentistry.
+- Homepage copy is owner-written; use it verbatim. Do not add claims (stats, ratings, offers, pricing) the owner has not supplied.
+
+## Still missing
+Photos of Dr. Amir and the practice, real before/after photos, real patient reviews, street address, hours.
 
 ## Brand commitments
 - Name: Silicon Valley Smile Solutions. No existing logo, colors, or type.
